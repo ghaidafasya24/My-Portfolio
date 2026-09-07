@@ -16,7 +16,6 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -24,6 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="assets/css/about.css" />
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Navbar -->
@@ -70,14 +70,14 @@
               class="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"
             ></span
           ></a>
-          <a
+          <!-- <a
             href="#publication"
             class="px-4 py-2 relative text-white font-medium transition-all duration-300 ease-in-out hover:text-cyan-400 group"
             >Publication
             <span
               class="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"
             ></span
-          ></a>
+          ></a> -->
           <a
             href="#certificate"
             class="px-4 py-2 relative text-white font-medium transition-all duration-300 ease-in-out hover:text-cyan-400 group"
@@ -147,11 +147,11 @@
           class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
           >Projects</a
         >
-        <a
+        <!-- <a
           href="#articles"
           class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
           >Articles</a
-        >
+        > -->
         <a
           href="#certificate"
           class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
@@ -224,7 +224,7 @@
               <i class="fa-brands fa-instagram text-lg"></i>
             </a>
             <a
-              href="mailto:ghaidafsy13@gmail.com"
+              href="mailto:ghaidafasya04@gmail.com"
               class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-cyan-300 hover:text-yellow-400 hover:shadow-[0_0_15px_rgba(250,204,21,0.6)] transform hover:scale-110 transition-all duration-300"
             >
               <i class="fa-regular fa-envelope text-lg"></i>
@@ -241,7 +241,7 @@
           <!-- CTA Buttons -->
           <div class="flex justify-center lg:justify-start gap-3 pt-3">
             <a
-              href="#contact"
+              href="mailto:ghaidafasya04@gmail.com"
               class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-white text-sm font-semibold shadow-md hover:shadow-lg hover:scale-105 transition duration-300"
             >
               📩 Contact Me
@@ -313,6 +313,109 @@
     </section>
     <!-- Home end  -->
 
+    <!-- Personal Information / Interactive ID Card -->
+    <div class="max-w-4xl mx-auto mb-16">
+      <div class="id-card-container" id="idCardContainer">
+        <div class="id-card" id="idCard">
+          <!-- FRONT SIDE -->
+          <div class="id-card-front">
+            <!-- Decorative Elements -->
+            <div class="card-glow"></div>
+
+            <div class="id-card-header">
+              <div class="id-card-logo">
+                <i class="fas fa-id-card"></i>
+              </div>
+
+              <div>
+                <p class="id-card-title">PERSONAL IDENTITY</p>
+                <p class="id-card-subtitle">PORTFOLIO PROFILE</p>
+              </div>
+            </div>
+
+            <div class="id-card-content">
+              <!-- Profile Image -->
+              <div class="profile-image-wrapper">
+                <img
+                  src="assets/img/profile2.jpg"
+                  alt="Ghaida Fasya Yuthika Afifah"
+                  class="id-profile-image"
+                />
+              </div>
+
+              <!-- Information -->
+              <div class="id-information">
+                <div class="id-info-group">
+                  <span class="info-label">NAME</span>
+                  <h3>Ghaida Fasya Yuthika Afifah</h3>
+                </div>
+
+                <div class="id-info-group">
+                  <span class="info-label">NICKNAME</span>
+                  <p>Aca</p>
+                </div>
+
+                <div class="id-info-group">
+                  <span class="info-label">ROLE</span>
+                  <p>Web Developer</p>
+                </div>
+
+                <div class="id-info-group">
+                  <span class="info-label">BIRTH DATE</span>
+                  <p>June 13, 2004</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="id-card-footer">
+              <span>
+                <i class="fas fa-circle-check"></i>
+                VERIFIED PORTFOLIO
+              </span>
+
+              <span class="click-hint">
+                <i class="fas fa-hand-pointer"></i>
+                CLICK ME
+              </span>
+            </div>
+          </div>
+
+          <!-- BACK SIDE -->
+          <div class="id-card-back">
+            <div class="back-header">
+              <i class="fas fa-user-circle"></i>
+              <h2>ABOUT ME</h2>
+            </div>
+
+            <div class="back-content">
+              <p>
+                Hello! I'm <b>Ghaida Fasya Yuthika Afifah</b>, but you can call
+                me <b>Aca</b>.
+              </p>
+
+              <p>
+                I am passionate about web development and technology. I enjoy
+                solving problems, building digital experiences, and continuously
+                learning new things.
+              </p>
+
+              <div class="skill-tags">
+                <span>Web Development</span>
+                <span>Programming</span>
+                <span>Technology</span>
+                <span>Machine Learning</span>
+              </div>
+            </div>
+
+            <div class="back-footer">
+              <i class="fas fa-hand-pointer"></i>
+              Click again to flip back
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- About -->
     <section class="dark:bg-gray-900 dark:text-white py-12" id="about">
       <div class="container mx-auto px-4">
@@ -324,41 +427,12 @@
           </p>
         </div>
 
-        <!-- Personal Information Card -->
-        <div
-          class="max-w-4xl mx-auto mb-12 bg-gray-800 rounded-lg shadow-lg p-6"
-        >
-          <h2 class="text-2xl font-semibold text-cyan-400 mb-4">
-            Personal Information
-          </h2>
-          <div class="flex flex-col md:flex-row items-center gap-8">
-            <img
-              src="assets/img/profile2.jpg"
-              alt="Profile Image"
-              class="rounded-full shadow-lg w-48 h-48"
-            />
-            <div class="text-gray-300 mt-4 md:mt-0">
-              <p>
-                Hello all! I'm Ghaida Fasya Yuthika Afifah, but you can call me
-                Aca or anything. I am 21 y.o, i was born on June 13, 2004 in
-                Bandung.
-              </p>
-              <p class="mt-4">
-                I'm passionate web developer with a keen interest in web
-                technologies. I enjoy solving complex problems and continuously
-                learning new things.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <!-- Education Card -->
         <div
           class="max-w-4xl mx-auto mb-12 bg-gray-800 rounded-lg shadow-lg p-6"
         >
           <h2 class="text-2xl font-semibold text-cyan-400 mb-4">Education</h2>
           <ul class="space-y-4">
-
             <li class="flex items-center">
               <span
                 class="w-12 h-12 bg-cyan-400 text-white rounded-full flex justify-center items-center mr-4"
@@ -1725,6 +1799,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/certificate.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/about.js"></script>
     <script src="detail_card.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
